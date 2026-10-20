@@ -1,0 +1,17 @@
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+
+# 本地草稿与表格（不要发布）
+*.xls
+*.xlsx
+*.csv
+*.psd
+*.mp4
+*.zip
+
+# 临时文件
+_tmp*
+~$*
