@@ -48,7 +48,7 @@ window.SCORES = [
   { char: "火神", cons: 2, weapon: "r1千阳", element: "冰", dps: 145236, note: "无法模拟满战意", driver: "小鸠阿_" },
   { char: "火神", cons: 2, weapon: "r1千阳", element: "冰", dps: 152701, note: "无法模拟满战意", driver: "t0级爱少女充能大王" },
   { char: "火神", cons: 6, weapon: "r1千阳", element: "冰", dps: 246667, note: "无法模拟满战意，95级", driver: "手忙脚乱的新手" },
-  { char: "火神", cons: 6, weapon: "r5千阳", element: "冰", dps: 284549, note: "95级，带欧茜模拟战意（未切出），模拟-30%攻击（6欧）", driver: "手忙脚乱的新手" },
+  { char: "火神", cons: 6, weapon: "r1千阳", element: "冰", dps: 284549, note: "95级，带欧茜模拟战意（未切出），模拟-30%攻击（6欧）", driver: "手忙脚乱的新手" },
   { char: "火神", cons: 6, weapon: "r5千阳", element: "冰", dps: 340541, note: "携带纳塔队友模拟战意（未切出），有双火，100级", driver: "碳基" },
   { char: "火神", cons: 2, weapon: "r1千阳", element: "冰", dps: 163813, note: "携带欧茜模拟战意，模拟词条-30攻（6欧）", driver: "九代目唐影" },
   { char: "火神", cons: 2, weapon: "r1千阳", element: "冰", dps: 126716, note: "模拟单通哥神秘zsa手法（单通哥不承认双玛头，我认）", driver: "Miss奥黛塔" },
