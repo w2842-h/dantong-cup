@@ -376,6 +376,11 @@
     padding:2px 6px;border-radius:4px;background:#efe6fb;color:#6a4fb3;
     border:1px solid #ddcdf3;vertical-align:middle;
   }
+  /* 备注里的“娱乐”二字着重标出 */
+  mark.funmark{
+    background:#e7dbfb;color:#5a3ea8;font-weight:800;
+    padding:0 3px;border-radius:3px;
+  }
   .legend-dot{
     display:inline-block;width:8px;height:8px;border-radius:2px;background:#7a5cc0;
     margin-right:6px;vertical-align:middle;
@@ -728,7 +733,9 @@
       const dragonChip = r.char === '龙王' ? '<span class="cchip">龙王赛道</span>' : '';
       const funChip = isFun ? '<span class="fchip">娱乐赛道</span>' : '';
       const heChip = isFeat ? '<span class="hechip">单通哥</span>' : '';
-      const note = r.note ? esc(r.note) : '<span class="dim">—</span>';
+      const note = r.note
+        ? esc(r.note).replace(/娱乐/g, '<mark class="funmark">娱乐</mark>')
+        : '<span class="dim">—</span>';
       return '<tr class="' + (isFeat ? 'feat' : '') + (isFun ? ' fun' : '') + '">' +
         '<td class="char"><b>' + esc(r.char) + '</b>' + dragonChip + funChip + '</td>' +
         '<td class="cons">' + esc(r.cons) + '</td>' +
