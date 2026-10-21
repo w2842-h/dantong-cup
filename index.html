@@ -239,7 +239,10 @@
     font-size:14px;font-weight:700;line-height:1.8;color:#8d1710;letter-spacing:.02em;
   }
   .origin-fig{margin:20px 0 0}
-  .origin-fig a{
+  /* 只作用于图片链接本身。不能用 .origin-fig a —— 那是后代选择器，
+     会连 figcaption 里的文字链接一起变成 display:block + line-height:0，
+     结果链接被压成 1 像素高、完全看不见（实测踩过）。 */
+  .origin-fig > a{
     display:block;line-height:0;border-radius:12px;overflow:hidden;
     border:1px solid #e6d6c0;box-shadow:0 12px 28px rgba(0,0,0,.14);
   }
@@ -247,6 +250,13 @@
   .origin-fig figcaption{
     margin-top:10px;font-size:11.5px;color:#a3927f;letter-spacing:.04em;text-align:center;
   }
+  /* 图注里的外链（比如"去 B 站看"）。不套 .rulelink —— 那个是卡片样式，
+     套进 figcaption 会把半个图注变成一块带红边的方块。 */
+  .origin-fig figcaption a{
+    color:var(--red-deep);font-weight:700;text-decoration:none;
+    border-bottom:1px solid rgba(141,23,16,.35);
+  }
+  .origin-fig figcaption a:hover{border-bottom-color:var(--red-deep)}
   .open-call{
     display:inline-flex;align-items:center;gap:8px;margin-top:20px;padding:10px 18px;
     border-radius:999px;background:#fdf0dc;border:1px solid #eed5b4;
@@ -590,10 +600,10 @@
     <p class="lead">不妨看这个视频：</p>
 
     <figure class="origin-fig">
-      <a href="intro-video.jpg" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.bilibili.com/video/BV1zU6nYwE68" target="_blank" rel="noopener noreferrer" title="在 B 站观看《单通哥传奇》第一部">
         <img src="intro-video.jpg" alt="纪录片《单通哥传奇》第一部：0命龙王审判众生">
       </a>
-      <figcaption>《单通哥传奇》第一部：0 命龙王审判众生，2 分 04 秒（点击查看大图）</figcaption>
+      <figcaption>《单通哥传奇》第一部：0 命龙王审判众生，2 分 04 秒 —— <a href="https://www.bilibili.com/video/BV1zU6nYwE68" target="_blank" rel="noopener noreferrer">去 B 站看</a><span class="rulelink-bv">BV1zU6nYwE68</span></figcaption>
     </figure>
 
     <figure class="origin-fig">
