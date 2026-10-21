@@ -367,6 +367,19 @@
   }
   tr.feat{background:#fff0b3 !important;box-shadow:inset 4px 0 0 var(--red)}
   tr.feat:hover{background:#ffe9a0 !important}
+  /* 娱乐赛道：特殊环境 / 非标准打法，单独标出 */
+  tbody tr.fun{background:#faf6ff !important}
+  tbody tr.fun:hover{background:#f2e9fe !important}
+  tbody tr.fun td:first-child{box-shadow:inset 4px 0 0 #7a5cc0}
+  .fchip{
+    display:inline-block;margin-left:7px;font-size:10px;font-weight:700;letter-spacing:.06em;
+    padding:2px 6px;border-radius:4px;background:#efe6fb;color:#6a4fb3;
+    border:1px solid #ddcdf3;vertical-align:middle;
+  }
+  .legend-dot{
+    display:inline-block;width:8px;height:8px;border-radius:2px;background:#7a5cc0;
+    margin-right:6px;vertical-align:middle;
+  }
   .hechip{
     display:inline-block;margin-left:8px;font-size:10px;font-weight:800;letter-spacing:.1em;
     padding:2px 7px;border-radius:4px;background:var(--red);color:#fff;vertical-align:middle;
@@ -587,6 +600,7 @@
     <div class="board-foot">
       <span>共 <b id="footCount">—</b> 条记录 · 单通哥那条置顶 · 其余按角色名排序 · 数据持续收录中</span>
       <span>单通哥系数 = 本条 DPS ÷ 62,366，仅显示 ≥1 的记录</span>
+      <span><i class="legend-dot"></i>娱乐赛道：特殊环境 / 非标准打法，仅供参考</span>
       <span>本表不代表角色强度 · 禁止截图拉踩</span>
     </div>
   </section>
@@ -710,11 +724,13 @@
 
     tbody.innerHTML = rows.map(r => {
       const isFeat = !!r.featured;
+      const isFun = /娱乐/.test(r.note || '');
       const dragonChip = r.char === '龙王' ? '<span class="cchip">龙王赛道</span>' : '';
+      const funChip = isFun ? '<span class="fchip">娱乐赛道</span>' : '';
       const heChip = isFeat ? '<span class="hechip">单通哥</span>' : '';
       const note = r.note ? esc(r.note) : '<span class="dim">—</span>';
-      return '<tr class="' + (isFeat ? 'feat' : '') + '">' +
-        '<td class="char"><b>' + esc(r.char) + '</b>' + dragonChip + '</td>' +
+      return '<tr class="' + (isFeat ? 'feat' : '') + (isFun ? ' fun' : '') + '">' +
+        '<td class="char"><b>' + esc(r.char) + '</b>' + dragonChip + funChip + '</td>' +
         '<td class="cons">' + esc(r.cons) + '</td>' +
         '<td class="weapon">' + esc(r.weapon) + '</td>' +
         '<td class="element">' + esc(r.element) + '</td>' +
