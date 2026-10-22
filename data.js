@@ -195,6 +195,7 @@ window.SCORES = [
   { char: "仆人", cons: 3, weapon: "r1专武", element: "冰", dps: 120000, note: "90级", driver: "Ems_-" },
   { char: "仆人", cons: 2, weapon: "r1专武", element: "冰", dps: 87000, note: "", driver: "那些所谓就" },
   { char: "仆人", cons: 0, weapon: "r1专武", element: "冰", dps: 66100, note: "", driver: "黄昏洛葉" },
+  { char: "仆人", cons: 3, weapon: "r1和璞", element: "冰", dps: 115000, note: "模拟调整百暴", driver: "浓zlh" },
   { char: "恰斯卡", cons: 6, weapon: "r2星鹫", element: "火", dps: 222699, note: "95级，带水水冰挂件", driver: "枫亭了、" },
   { char: "恰斯卡", cons: 6, weapon: "r1专武", element: "火", dps: 197000, note: "95级，双水一冰挂件", driver: "岁寒咕咕" },
   { char: "恰斯卡", cons: 6, weapon: "r1专武", element: "火", dps: 170000, note: "水水冰，挂件95级", driver: "我是手法大师" },

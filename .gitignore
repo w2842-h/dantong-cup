@@ -18,3 +18,5 @@ _tmp*
 
 # 本地发布脚本
 发布.bat
+同步并发布.bat
+sync_from_xls.py
