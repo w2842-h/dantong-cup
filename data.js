@@ -357,5 +357,6 @@ window.SCORES = [
   { char: "兹白", cons: 3, weapon: "r5锻造", element: "水", dps: 79541, note: "模拟满辉", driver: "那菈鲨鲨" },
   { char: "兹白", cons: 2, weapon: "锻造", element: "水", dps: 70000, note: "满辉", driver: "桃里桃气QAQ" },
   { char: "兹白", cons: 2, weapon: "r1裁光", element: "水", dps: 59997, note: "满辉", driver: "bili_3546740709919584" },
-  { char: "兹白", cons: 2, weapon: "锻造", element: "水", dps: 72000, note: "90级", driver: "何时与君共勉" }
+  { char: "兹白", cons: 2, weapon: "锻造", element: "水", dps: 72000, note: "90级", driver: "何时与君共勉" },
+  { char: "法尔伽", cons: 0, weapon: "r1专武", element: "冰", dps: 99000, note: "魔导双风双火，已去除双火buff", driver: "S_a_l_tFish" }
 ];
