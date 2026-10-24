@@ -71,6 +71,7 @@ window.SCORES = [
   { char: "法尔伽", cons: 0, weapon: "螭骨", element: "火", dps: 83500, note: "词条模拟r5螭骨，挂件魔导水风", driver: "极洞king" },
   { char: "法尔伽", cons: 0, weapon: "r1裁断", element: "火", dps: 74150, note: "带双风双水挂件模拟满大权", driver: "-_-hgg" },
   { char: "法尔伽", cons: 0, weapon: "r3螭骨", element: "火", dps: 66400, note: "双水双风魔导", driver: "宋故里Weather" },
+  { char: "法尔伽", cons: 0, weapon: "r1专武", element: "冰", dps: 99000, note: "魔导双风双火，已去除双火buff", driver: "S_a_l_tFish" },
   { char: "珐露珊", cons: 6, weapon: "r1冬极", element: "水", dps: 30833, note: "95级", driver: "溯源千书蔓藤主" },
   { char: "菲林斯", cons: 6, weapon: "r5荒城", element: "水", dps: 272254, note: "100级，满辉，调整9暴击", driver: "开心sama" },
   { char: "菲林斯", cons: 6, weapon: "r5荒城", element: "水", dps: 250032, note: "模拟满辉，100级", driver: "偷摸洛恩pg被抓的雨夜" },
@@ -140,7 +141,7 @@ window.SCORES = [
   { char: "嘉明", cons: 5, weapon: "r1狼末", element: "冰", dps: 56606, note: "含双火双冰buff", driver: "那些所谓就" },
   { char: "嘉明", cons: 6, weapon: "r5硕果", element: "冰", dps: 52900, note: "", driver: "煤人疼" },
   { char: "嘉明", cons: 6, weapon: "r4硕果", element: "冰", dps: 51605, note: "", driver: "晓_晓企鹅" },
-  { char: "柯莱", cons: 6, weapon: "r5终末", element: "水", dps: 43821, note: "双木桩", driver: "伊塔铃Intelly" },
+  { char: "柯莱", cons: 6, weapon: "r1终末", element: "水", dps: 43821, note: "双木桩", driver: "伊塔铃Intelly" },
   { char: "可莉", cons: 6, weapon: "r5四风", element: "冰", dps: 150560, note: "携带阿贝多开魔导", driver: "梅兹特利咲咲玛" },
   { char: "可莉", cons: 6, weapon: "r4四风", element: "冰", dps: 125144, note: "95级无魔导，带魔导挂件188575", driver: "qwq轻雾" },
   { char: "可莉", cons: 1, weapon: "r1专武", element: "冰", dps: 67000, note: "双火+公子", driver: "裕羽" },
@@ -256,6 +257,7 @@ window.SCORES = [
   { char: "恰斯卡", cons: 6, weapon: "r1专武", element: "火", dps: 170000, note: "水水冰，挂件95级", driver: "我是手法大师" },
   { char: "恰斯卡", cons: 6, weapon: "r2专武", element: "火", dps: 217000, note: "117f，水水冰挂件，含", driver: "奶油胖胖龙" },
   { char: "恰斯卡", cons: 2, weapon: "r1专武", element: "火", dps: 97800, note: "水水冰挂件", driver: "小黑子都油饼" },
+  { char: "恰斯卡", cons: 6, weapon: "r1专武", element: "火", dps: 223000, note: "95级，水水冰，含纳塔队友", driver: "晓雾霾天" },
   { char: "茜特菈莉", cons: 6, weapon: "r1专武", element: "火", dps: 50000, note: "6爆伤换3暴击", driver: "无汐辰" },
   { char: "赛诺", cons: 6, weapon: "r5专武", element: "冰", dps: 296000, note: "95级，r2调词条模拟r5，带挂件奥黛塔", driver: "屑取名" },
   { char: "赛诺", cons: 6, weapon: "r5专武", element: "冰", dps: 280000, note: "100级，挂件冰主", driver: "HO_CO_OH" },
@@ -263,6 +265,7 @@ window.SCORES = [
   { char: "赛诺", cons: 6, weapon: "r5赤沙", element: "冰", dps: 267597, note: "100级，携带冰主", driver: "ID-iddi" },
   { char: "赛诺", cons: 3, weapon: "r1赤沙", element: "冰", dps: 114777, note: "可领命座，带奥+冰主，131f", driver: "半疯狂客" },
   { char: "赛诺", cons: 2, weapon: "r5赤沙", element: "冰", dps: 112489, note: "砺行修远可领命座，携带挂件冰主", driver: "十一爱吃竹" },
+  { char: "赛诺", cons: 6, weapon: "r5专武", element: "冰", dps: 282000, note: "100级，挂件冰主", driver: "晓雾霾天" },
   { char: "赛索斯", cons: 6, weapon: "弹弓", element: "草", dps: 33352, note: "", driver: "悬梦秋千" },
   { char: "赛索斯", cons: 6, weapon: "r1赤羽", element: "草", dps: 43000, note: "", driver: "星河幻梦大鸽子" },
   { char: "散兵", cons: 6, weapon: "r5专武", element: "", dps: 93400, note: "模拟染火冰，100级", driver: "十阶元素之神巅峰" },
@@ -357,6 +360,5 @@ window.SCORES = [
   { char: "兹白", cons: 3, weapon: "r5锻造", element: "水", dps: 79541, note: "模拟满辉", driver: "那菈鲨鲨" },
   { char: "兹白", cons: 2, weapon: "锻造", element: "水", dps: 70000, note: "满辉", driver: "桃里桃气QAQ" },
   { char: "兹白", cons: 2, weapon: "r1裁光", element: "水", dps: 59997, note: "满辉", driver: "bili_3546740709919584" },
-  { char: "兹白", cons: 2, weapon: "锻造", element: "水", dps: 72000, note: "90级", driver: "何时与君共勉" },
-  { char: "法尔伽", cons: 0, weapon: "r1专武", element: "冰", dps: 99000, note: "魔导双风双火，已去除双火buff", driver: "S_a_l_tFish" }
+  { char: "兹白", cons: 2, weapon: "锻造", element: "水", dps: 72000, note: "90级", driver: "何时与君共勉" }
 ];
