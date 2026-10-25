@@ -654,9 +654,9 @@
   </footer>
 </div>
 
-<script src="data.js"></script>
 <script>
-(function () {
+/* data.js 由下面这段动态加载，并带上时间戳，避免浏览器缓存导致数据迟迟不更新 */
+function dantongInit() {
   const S = (window.SCORES || []).slice();
   const META = window.META || {};
 
@@ -782,7 +782,16 @@
       strip.classList.toggle('on', !entries[0].isIntersecting);
     }, { threshold: 0, rootMargin: '-90px 0px 0px 0px' }).observe(pinEl);
   }
-})();
+  }
 </script>
-</body>
-</html>
+  <script>
+  (function () {
+    var s = document.createElement('script');
+    s.src = 'data.js?v=' + Date.now();
+    s.onload = dantongInit;
+    s.onerror = dantongInit;   // 加载失败也跑一遍，至少显示空表提示
+    document.head.appendChild(s);
+  })();
+  </script>
+  </body>
+  </html>
