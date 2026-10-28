@@ -296,6 +296,27 @@
   }
   .paper .contact b{color:var(--red-deep);font-weight:700}
   .paper ol + .lead{margin-top:22px}
+  /* 目录：点击直达各板块（覆盖 .paper ol 的序号样式） */
+  .toc-list{
+    list-style:none;margin:4px 0 0;padding:0;counter-reset:none;
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px 12px;
+  }
+  .paper .toc-list > li{padding-left:0;counter-increment:none;line-height:1.4}
+  .paper .toc-list > li::before{content:none}
+  .toc-list a{
+    display:flex;align-items:center;gap:9px;padding:10px 14px;border-radius:10px;
+    background:#fff8ec;border:1px solid #ecdcc2;color:#1d0f0a;text-decoration:none;
+    font-size:13.5px;font-weight:700;letter-spacing:.02em;
+    transition:background .15s ease,transform .15s ease,border-color .15s ease;
+  }
+  .toc-list a:hover{background:#fdf0dc;border-color:#e2bf92;transform:translateX(2px)}
+  .toc-list .n{
+    flex:none;width:20px;height:20px;border-radius:6px;background:var(--red);
+    color:#fff;font-size:11px;font-weight:800;
+    display:flex;align-items:center;justify-content:center;
+  }
+  html{scroll-behavior:smooth}
+  section[id]{scroll-margin-top:74px}
 
 
   /* ---------- 榜单 ---------- */
@@ -447,6 +468,7 @@
     .board-foot{font-size:10.5px}
   }
   @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
     *{transition:none !important;animation:none !important}
   }
 </style>
@@ -498,8 +520,28 @@
     </div>
   </section>
 
+  <!-- ============ 目录 ============ -->
+  <section class="paper" id="toc">
+    <div class="paper-head">
+      <h2>目录</h2>
+    </div>
+
+    <p class="lead">点哪条跳哪条：</p>
+
+    <ol class="toc-list">
+      <li><a href="#origin"><span class="n">1</span>赛事起源</a></li>
+      <li><a href="#purpose"><span class="n">2</span>杯赛目的</a></li>
+      <li><a href="#disclaimer"><span class="n">3</span>免责声明</a></li>
+      <li><a href="#about-rules"><span class="n">4</span>关于规则</a></li>
+      <li><a href="#about-collect"><span class="n">5</span>关于收录</a></li>
+      <li><a href="#board"><span class="n">6</span>完整成绩</a></li>
+      <li><a href="#about-single"><span class="n">7</span>想了解单通哥？</a></li>
+      <li><a href="#no-trash"><span class="n">8</span>不拉踩角色</a></li>
+    </ol>
+  </section>
+
   <!-- ============ 赛事起源 ============ -->
-  <section class="paper">
+  <section class="paper" id="origin">
     <div class="paper-head">
       <h2>赛事起源</h2>
     </div>
@@ -528,7 +570,7 @@
   </section>
 
   <!-- ============ 杯赛目的 ============ -->
-  <section class="paper">
+  <section class="paper" id="purpose">
     <div class="paper-head">
       <h2>杯赛目的</h2>
     </div>
@@ -537,7 +579,7 @@
   </section>
 
   <!-- ============ 免责声明 ============ -->
-  <section class="paper">
+  <section class="paper" id="disclaimer">
     <div class="paper-head">
       <h2>免责声明</h2>
       <div class="seal">纯娱乐<br>无奖金</div>
@@ -601,7 +643,7 @@
   </section>
 
   <!-- ============ 关于收录 ============ -->
-  <section class="paper">
+  <section class="paper" id="about-collect">
     <div class="paper-head">
       <h2>关于收录</h2>
     </div>
@@ -612,7 +654,7 @@
   </section>
 
   <!-- ============ 榜单 ============ -->
-  <section class="board">
+  <section class="board" id="board">
     <div class="watermark" id="watermark"></div>
     <div class="stamp">仅供娱乐<br>禁止拉踩</div>
 
@@ -653,7 +695,7 @@
   </section>
 
   <!-- ============ 想了解单通哥 ============ -->
-  <section class="paper">
+  <section class="paper" id="about-single">
     <div class="paper-head">
       <h2>想了解单通哥？</h2>
     </div>
