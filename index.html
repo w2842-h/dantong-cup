@@ -204,6 +204,11 @@
     border-left:5px solid var(--red);
     font-size:19px;font-weight:800;letter-spacing:.06em;color:#8d1710;
   }
+  .callout a{
+    margin-left:6px;color:#8d1710;font-weight:800;text-decoration:none;
+    border-bottom:1px solid rgba(141,23,16,.45);
+  }
+  .callout a:hover{border-bottom-color:#8d1710}
   /* 详细规则：指向原始视频 */
   .rulelink{
     margin:22px 0 0;padding:14px 18px;border-radius:12px;
@@ -247,6 +252,8 @@
     border:1px solid #e6d6c0;box-shadow:0 12px 28px rgba(0,0,0,.14);
   }
   .origin-fig img{display:block;width:100%;height:auto}
+  /* 竖屏/小尺寸截图不拉伸到整宽，居中显示 */
+  .origin-fig.narrow > a{max-width:640px;margin:0 auto}
   .origin-fig figcaption{
     margin-top:10px;font-size:11.5px;color:#a3927f;letter-spacing:.04em;text-align:center;
   }
@@ -283,6 +290,7 @@
     content:"";width:6px;height:6px;border-radius:50%;background:var(--red);display:block;
   }
   .paper .contact b{color:var(--red-deep);font-weight:700}
+  .paper ol + .lead{margin-top:22px}
 
 
   /* ---------- 榜单 ---------- */
@@ -545,7 +553,52 @@
       <span class="rulelink-v">见视频：<a href="https://www.bilibili.com/video/BV1h1nL6JE8R" target="_blank" rel="noopener noreferrer">【单通哥杯】目前成绩展示，单通哥喜提龙王赛道倒一！2+1主c赛道倒一！</a><span class="rulelink-bv">BV1h1nL6JE8R</span></span>
     </p>
 
-    <div class="callout">不拉踩角色。只讨论规则。</div>
+    <div class="callout">不拉踩角色。只讨论规则。<a href="#no-trash">已经有反面案例 →</a></div>
+  </section>
+
+  <!-- ============ 不拉踩角色 ============ -->
+  <section class="paper" id="no-trash">
+    <div class="paper-head">
+      <h2>不拉踩角色</h2>
+      <div class="seal">只玩梗<br>不拉踩</div>
+    </div>
+
+    <p class="lead">本页的成绩只有一个用途：<b>给愿意玩的人一个能对表的榜单</b>。它证明不了任何角色的强弱，也不接受被拿去当「角色强弱判决书」。</p>
+
+    <p class="lead">偏偏有人要这么用。下面两个是<b>反面案例</b>，挂在这里当说明——</p>
+
+    <h3 class="sub-h">反面案例一 · 单通哥（B站 @植2bug必须修）</h3>
+
+    <p class="lead">他拿这个娱乐打桩榜做成了系列视频，标题直接写成「究竟让多少强势角色暴露了<b>不如龙王一喷</b>的本体数值」「究竟让多少爆龙大C<b>原形毕露</b>了」，视频里的说法是「<b>不吃拐的情况下只触发天赋打自挂元素也是出现一大堆龙下</b>」。</p>
+
+    <figure class="origin-fig">
+      <a href="lacai-single-1.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="lacai-single-1.jpg" alt="单通哥视频《究竟让多少强势角色暴露了不如龙王一喷的本体数值》截图">
+      </a>
+      <figcaption>反面案例 · 《究竟让多少强势角色暴露了不如龙王一喷的本体数值》（点击查看大图）</figcaption>
+    </figure>
+
+    <figure class="origin-fig">
+      <a href="lacai-single-2.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="lacai-single-2.jpg" alt="单通哥视频《究竟让多少爆龙大C原形毕露了》截图">
+      </a>
+      <figcaption>反面案例 · 《究竟让多少爆龙大C原形毕露了》（点击查看大图）</figcaption>
+    </figure>
+
+    <p class="lead">把一套「满能量 + 无元素共鸣 + 自挂元素木桩」的娱乐数据，当成角色本身不行的证据——这正是本页<b>明确反对</b>的用法。免责声明第 2 条已经写得很清楚了：这种条件下的成绩<b>参考价值约等于零</b>。</p>
+
+    <h3 class="sub-h">反面案例二 · 狸神（B站 @很难-不流汗）</h3>
+
+    <p class="lead">在群聊里点评参赛选手：「<b>嗑羊想拉踩罢了</b>」「<b>这个比赛已经歪了</b>」「<b>变成角色之间的拉踩大战了</b>」——把别人单纯来玩玩，解读成拉踩。</p>
+
+    <figure class="origin-fig narrow">
+      <a href="lacai-chat.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="lacai-chat.jpg" alt="群聊截图：狸神点评参赛选手『嗑羊想拉踩罢了 / 这个比赛已经歪了 / 变成角色之间的拉踩大战了』">
+      </a>
+      <figcaption>反面案例 · 群聊发言（点击查看大图）</figcaption>
+    </figure>
+
+    <div class="verdict">拿本页数据去拉踩角色的，与本页无关。想论证角色强弱，请去别的地方。</div>
   </section>
 
   <!-- ============ 关于规则 ============ -->
@@ -565,6 +618,15 @@
       <li>新规则下要展示队里所有角色的武器圣遗物，防止挂件位带辅助圣遗物武器（这条反而是小事）。</li>
       <li>单通哥所谓「调高抗性防止辅助打伤害」也很幽默：直接从左侧看单人总伤就能算单人 DPS，压根不需要像他说的那样调抗性，甚至有的木桩可以直接设置<b>免疫特定元素伤害</b>。</li>
     </ol>
+
+    <p class="lead">规则争论在评论区是这么展开的——他说「这玩法是我创的，现在很多人都按这个规则打的」，最后一句是「<b>也是给你蹭上热度了</b>」：</p>
+
+    <figure class="origin-fig">
+      <a href="reply-heat.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="reply-heat.jpg" alt="评论区截图：单通哥称『这玩法是我创的』，并回复『也是给你蹭上热度了』">
+      </a>
+      <figcaption>关于规则之争的评论区原话（点击查看大图）</figcaption>
+    </figure>
 
     <div class="verdict">本页原则上不收录「新单通哥杯」规则下的稿件；单通哥如果想办，可以自己来收录。</div>
   </section>
