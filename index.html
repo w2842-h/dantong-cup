@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="B站 雪落棋枰">
 <meta name="description" content="「单通哥杯」单人无限能量挂元素打桩 成绩公示 —— 娱乐赛，不代表任何角色强度。">
+<meta name="theme-color" content="#430b07">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="单通哥杯 成绩公示">
+<meta property="og:title" content="「单通哥杯」成绩公示 · 单人无限能量挂元素打桩">
+<meta property="og:description" content="一场没有奖金的娱乐赛，只记录规则下的数字，不评价任何角色强弱。目前收录成绩持续更新中。">
+<meta property="og:image" content="https://w2842-h.github.io/dantong-cup/intro-video.jpg">
+<meta property="og:url" content="https://w2842-h.github.io/dantong-cup/">
+<meta name="twitter:card" content="summary_large_image">
 <title>「单通哥杯」成绩公示</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
 <style>
@@ -315,8 +323,40 @@
     color:#fff;font-size:11px;font-weight:800;
     display:flex;align-items:center;justify-content:center;
   }
-  html{scroll-behavior:smooth}
+  .toc-list a.active{
+    background:#fdf0dc;border-color:#debe93;
+    box-shadow:inset 0 0 0 1px rgba(200,41,27,.18);
+  }
+  .toc-list a.active .n{background:var(--red-deep)}
   section[id]{scroll-margin-top:74px}
+  /* 回到目录浮标 */
+  .totoc{
+    position:fixed;right:22px;bottom:24px;z-index:60;
+    display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;
+    width:52px;height:52px;border-radius:50%;text-decoration:none;
+    background:linear-gradient(150deg,#c8291b,#8d1710);color:#fff6e8;
+    font-size:16px;font-weight:800;line-height:1;
+    border:2px solid rgba(255,224,180,.55);
+    box-shadow:0 10px 24px rgba(0,0,0,.38);
+    opacity:0;visibility:hidden;transform:translateY(10px);
+    transition:opacity .2s ease,transform .2s ease,visibility .2s ease,background .15s ease;
+  }
+  .totoc span{font-size:9.5px;letter-spacing:.1em;opacity:.92;font-weight:700}
+  .totoc.on{opacity:1;visibility:visible;transform:none}
+  .totoc:hover{background:linear-gradient(150deg,#d9391f,#a01d12)}
+  @media (max-width:560px){
+    .totoc{right:14px;bottom:16px;width:46px;height:46px;font-size:14px}
+  }
+  /* 键盘可达性 */
+  a:focus-visible,button:focus-visible,input:focus-visible{
+    outline:3px solid #ffc247;outline-offset:2px;border-radius:6px;
+  }
+  /* 窄屏提示：表格可以左右滑 */
+  .scroll-hint{
+    display:none;margin:0 0 8px;text-align:center;
+    font-size:11.5px;letter-spacing:.06em;color:#9b8977;
+  }
+  @media (max-width:760px){ .scroll-hint{display:block} }
 
 
   /* ---------- 榜单 ---------- */
@@ -550,7 +590,7 @@
 
     <figure class="origin-fig">
       <a href="origin.jpg" target="_blank" rel="noopener noreferrer">
-        <img src="origin.jpg" alt="单通哥（植2bug必须修）发帖：求 2+1 玛拉妮无限满能量单挑打自挂火">
+        <img width="1224" height="358" loading="lazy" decoding="async" src="origin.jpg" alt="单通哥（植2bug必须修）发帖：求 2+1 玛拉妮无限满能量单挑打自挂火">
       </a>
       <figcaption>赛事起源 · 单通哥（B站 @植2bug必须修）原帖，10 月 13 日（点击查看大图）</figcaption>
     </figure>
@@ -563,7 +603,7 @@
 
     <figure class="origin-fig">
       <a href="newrules.jpg" target="_blank" rel="noopener noreferrer">
-        <img src="newrules.jpg" alt="【新单通哥杯】新规则视频截图">
+        <img width="1138" height="524" loading="lazy" decoding="async" src="newrules.jpg" alt="【新单通哥杯】新规则视频截图">
       </a>
       <figcaption>「新单通哥杯」新规则视频 · 单通哥（B站 @植2bug必须修），2 天前（点击查看大图）</figcaption>
     </figure>
@@ -626,14 +666,14 @@
     <div class="figrow">
       <figure class="origin-fig">
         <a href="reply-heat.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="reply-heat.jpg" alt="评论区截图：单通哥称『这玩法是我创的』，并回复『也是给你蹭上热度了』">
+          <img width="972" height="438" loading="lazy" decoding="async" src="reply-heat.jpg" alt="评论区截图：单通哥称『这玩法是我创的』，并回复『也是给你蹭上热度了』">
         </a>
         <figcaption>评论区原话（点击看大图）</figcaption>
       </figure>
 
       <figure class="origin-fig">
         <a href="newrules.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="newrules.jpg" alt="【新单通哥杯】新规则视频截图">
+          <img width="1138" height="524" loading="lazy" decoding="async" src="newrules.jpg" alt="【新单通哥杯】新规则视频截图">
         </a>
         <figcaption>「新单通哥杯」新规则视频（点击看大图）</figcaption>
       </figure>
@@ -661,13 +701,15 @@
     <div class="board-head">
       <h2>完整成绩 <small id="boardCount">共 — 条</small></h2>
       <div class="tools">
-        <input class="search" id="search" type="search" placeholder="搜索 角色 / 备注">
+        <input class="search" id="search" type="search" placeholder="搜索 角色 / 备注" aria-label="搜索角色或备注">
         <button class="chip active" data-filter="all">全部</button>
         <button class="chip" data-filter="dragon">只看龙王赛道</button>
       </div>
     </div>
 
-    <div class="table-wrap">
+    <p class="scroll-hint">← 左右滑动可以看完整表格 →</p>
+
+    <div class="table-wrap" tabindex="0" role="region" aria-label="成绩表格，可上下左右滚动">
       <table>
         <thead>
           <tr>
@@ -704,14 +746,14 @@
 
     <figure class="origin-fig">
       <a href="https://www.bilibili.com/video/BV1zU6nYwE68" target="_blank" rel="noopener noreferrer" title="在 B 站观看《单通哥传奇》第一部">
-        <img src="intro-video.jpg" alt="纪录片《单通哥传奇》第一部：0命龙王审判众生">
+        <img width="1224" height="389" loading="lazy" decoding="async" src="intro-video.jpg" alt="纪录片《单通哥传奇》第一部：0命龙王审判众生">
       </a>
       <figcaption>《单通哥传奇》第一部：0 命龙王审判众生，2 分 04 秒 —— <a href="https://www.bilibili.com/video/BV1zU6nYwE68" target="_blank" rel="noopener noreferrer">去 B 站看</a><span class="rulelink-bv">BV1zU6nYwE68</span></figcaption>
     </figure>
 
     <figure class="origin-fig">
       <a href="intro-account.jpg" target="_blank" rel="noopener noreferrer">
-        <img src="intro-account.jpg" alt="单通哥目前的账号名称：植2bug必须修">
+        <img width="1223" height="567" loading="lazy" decoding="async" src="intro-account.jpg" alt="单通哥目前的账号名称：植2bug必须修">
       </a>
       <figcaption>这是单通哥目前的账号名称：植2bug必须修</figcaption>
     </figure>
@@ -735,14 +777,14 @@
     <div class="figrow">
       <figure class="origin-fig">
         <a href="lacai-single-1.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="lacai-single-1.jpg" alt="单通哥视频《究竟让多少强势角色暴露了不如龙王一喷的本体数值》截图">
+          <img width="1200" height="526" loading="lazy" decoding="async" src="lacai-single-1.jpg" alt="单通哥视频《究竟让多少强势角色暴露了不如龙王一喷的本体数值》截图">
         </a>
         <figcaption>《…暴露了不如龙王一喷的本体数值》（点击看大图）</figcaption>
       </figure>
 
       <figure class="origin-fig">
         <a href="lacai-single-2.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="lacai-single-2.jpg" alt="单通哥视频《究竟让多少爆龙大C原形毕露了》截图">
+          <img width="1200" height="512" loading="lazy" decoding="async" src="lacai-single-2.jpg" alt="单通哥视频《究竟让多少爆龙大C原形毕露了》截图">
         </a>
         <figcaption>《…让多少爆龙大C原形毕露了》（点击看大图）</figcaption>
       </figure>
@@ -759,14 +801,14 @@
     <div class="figrow">
       <figure class="origin-fig">
         <a href="lacai-chat.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="lacai-chat.jpg" alt="群聊截图：狸神点评参赛选手『嗑羊想拉踩罢了 / 这个比赛已经歪了 / 变成角色之间的拉踩大战了』">
+          <img width="606" height="318" loading="lazy" decoding="async" src="lacai-chat.jpg" alt="群聊截图：狸神点评参赛选手『嗑羊想拉踩罢了 / 这个比赛已经歪了 / 变成角色之间的拉踩大战了』">
         </a>
         <figcaption>群聊发言（点击看大图）</figcaption>
       </figure>
 
       <figure class="origin-fig">
         <a href="lacai-speech.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="lacai-speech.jpg" alt="狸神（@很难-不流汗）视频《如果原神角色不能使用eq，什么角色所受到的影响是最小的》截图">
+          <img width="1200" height="573" loading="lazy" decoding="async" src="lacai-speech.jpg" alt="狸神（@很难-不流汗）视频《如果原神角色不能使用eq，什么角色所受到的影响是最小的》截图">
         </a>
         <figcaption>《如果原神角色不能使用 eq，什么角色所受到的影响是最小的》（点击看大图）</figcaption>
       </figure>
@@ -783,7 +825,48 @@
       再次声明：本页面不针对任何角色，只记录规则下的成绩。
     </div>
   </footer>
+
+  <a class="totoc" id="toToc" href="#toc" aria-label="回到目录">↑<span>目录</span></a>
 </div>
+
+<script>
+/* 回到目录浮标 + 目录当前项高亮 */
+(function () {
+  var toc = document.getElementById('toc');
+  var toToc = document.getElementById('toToc');
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+
+  function setActive(id) {
+    links.forEach(function (a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+    });
+  }
+
+  if (!toc || !toToc) return;
+
+  if ('IntersectionObserver' in window) {
+    // 滚过目录之后就显示浮标
+    new IntersectionObserver(function (entries) {
+      toToc.classList.toggle('on', entries[0].boundingClientRect.top < 0);
+    }, { threshold: 0 }).observe(toc);
+
+    // 目录里高亮当前所在板块
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) setActive(e.target.id);
+      });
+    }, { rootMargin: '-80px 0px -68% 0px', threshold: 0 });
+    links.forEach(function (a) {
+      var target = document.querySelector(a.getAttribute('href'));
+      if (target) io.observe(target);
+    });
+  } else {
+    window.addEventListener('scroll', function () {
+      toToc.classList.toggle('on', window.pageYOffset > toc.offsetTop + toc.offsetHeight);
+    });
+  }
+})();
+</script>
 
 <script>
 /* data.js 由下面这段动态加载，并带上时间戳，避免浏览器缓存导致数据迟迟不更新 */
