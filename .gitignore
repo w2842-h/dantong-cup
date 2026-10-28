@@ -21,3 +21,6 @@ _tmp*
 同步并发布.bat
 sync_from_xls.py
 本地维护说明.md
+
+# 本地快捷方式（不属于网页）
+*.lnk
