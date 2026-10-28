@@ -252,8 +252,6 @@
     border:1px solid #e6d6c0;box-shadow:0 12px 28px rgba(0,0,0,.14);
   }
   .origin-fig img{display:block;width:100%;height:auto}
-  /* 竖屏/小尺寸截图不拉伸到整宽，居中显示 */
-  .origin-fig.narrow > a{max-width:640px;margin:0 auto}
   /* 两张图横排（稍微调小） */
   .figrow{
     display:grid;grid-template-columns:1fr 1fr;gap:16px;
@@ -600,21 +598,23 @@
 
     <p class="lead">在群聊里点评参赛选手：「<b>嗑羊想拉踩罢了</b>」「<b>这个比赛已经歪了</b>」「<b>变成角色之间的拉踩大战了</b>」——把别人单纯来玩玩，解读成拉踩。</p>
 
-    <figure class="origin-fig narrow">
-      <a href="lacai-chat.jpg" target="_blank" rel="noopener noreferrer">
-        <img src="lacai-chat.jpg" alt="群聊截图：狸神点评参赛选手『嗑羊想拉踩罢了 / 这个比赛已经歪了 / 变成角色之间的拉踩大战了』">
-      </a>
-      <figcaption>反面案例 · 群聊发言（点击查看大图）</figcaption>
-    </figure>
+    <p class="lead">同类发言还有不少，比如下面这期视频——标题问「如果原神角色不能使用 eq，什么角色所受到的影响是最小的」，正文里给出的结论是「<b>这又是龙王相比于其他角色的一个显著优势</b>」：</p>
 
-    <p class="lead">同类发言还有不少，比如这期视频——标题问「如果原神角色不能使用 eq，什么角色所受到的影响是最小的」，正文里给出的结论是「<b>这又是龙王相比于其他角色的一个显著优势</b>」：</p>
+    <div class="figrow">
+      <figure class="origin-fig">
+        <a href="lacai-chat.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="lacai-chat.jpg" alt="群聊截图：狸神点评参赛选手『嗑羊想拉踩罢了 / 这个比赛已经歪了 / 变成角色之间的拉踩大战了』">
+        </a>
+        <figcaption>群聊发言（点击看大图）</figcaption>
+      </figure>
 
-    <figure class="origin-fig">
-      <a href="lacai-speech.jpg" target="_blank" rel="noopener noreferrer">
-        <img src="lacai-speech.jpg" alt="狸神（@很难-不流汗）视频《如果原神角色不能使用eq，什么角色所受到的影响是最小的》截图">
-      </a>
-      <figcaption>《如果原神角色不能使用 eq，什么角色所受到的影响是最小的》（点击看大图）</figcaption>
-    </figure>
+      <figure class="origin-fig">
+        <a href="lacai-speech.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="lacai-speech.jpg" alt="狸神（@很难-不流汗）视频《如果原神角色不能使用eq，什么角色所受到的影响是最小的》截图">
+        </a>
+        <figcaption>《如果原神角色不能使用 eq，什么角色所受到的影响是最小的》（点击看大图）</figcaption>
+      </figure>
+    </div>
 
     <div class="verdict">拿本页数据去拉踩角色的，与本页无关。想论证角色强弱，请去别的地方。</div>
   </section>
